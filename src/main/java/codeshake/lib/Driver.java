@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 public class Driver {
 
     public static WebDriver getDriver() {
-        System.setProperty("webdriver.chrome.driver", "C:\\BrowserDrivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", ".\\utils\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().window().maximize();
